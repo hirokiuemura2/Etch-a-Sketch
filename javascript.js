@@ -14,9 +14,13 @@ bigContainer.classList.add("bigContainer");
 const body = document.querySelector('body');
 let removeEverything = () => {
     const allSquares = document.querySelectorAll('.square');
+    const allRows = document.querySelectorAll('.rows');
     allSquares.forEach(square => {
         square.remove();
     });
+    allRows.forEach(row => {
+        row.remove();
+    })
 }
 // (insert element here).addEventListener("click",removeEverything);
 
@@ -38,3 +42,13 @@ let addSquares = (num) => {
 }
 
 addSquares(50);
+
+let sizer = document.querySelector('.sizer');
+sizer.addEventListener('click',() => {
+    let num = 100;
+    while (num > 50 || num < 1) {
+        num = prompt("Enter a number, 1-50 (inclusive)");
+    }
+    removeEverything();
+    addSquares(num);
+});

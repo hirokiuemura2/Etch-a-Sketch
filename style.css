@@ -1,14 +1,27 @@
 body {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    overflow:visible;
+}
+
+button {
+    flex-grow: 0;
+    max-width: 200px;
+    bor
 }
 
 .bigContainer {
     display: flex;
+    flex: auto;
+    border: 10px;
     flex-direction: column;
     width: 750px;
-    height: 750px;
+    max-width: 1000px;
+    aspect-ratio: 1 / 1;
+    border-style: solid;
+    box-sizing: border-box;
 }
 
 .square {
