@@ -36,9 +36,9 @@ addSquares(50);
 
 let sizer = document.querySelector('.sizer');
 sizer.addEventListener('click',() => {
-    let num = 100;
+    let num = 200;
     while (num > 100 || num < 1) {
-        num = prompt("Enter a number, 1-50 (inclusive)");
+        num = prompt("Enter a number, 1-100 (inclusive)");
     }
     removeEverything();
     addSquares(num);
