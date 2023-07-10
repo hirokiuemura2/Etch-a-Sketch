@@ -9,6 +9,7 @@ body {
 button {
     flex-grow: 0;
     max-width: 200px;
+    margin: 20px;
 }
 
 .bigContainer {
@@ -21,6 +22,7 @@ button {
     aspect-ratio: 1 / 1;
     border-style: solid;
     box-sizing: border-box;
+    margin: 20px;
 }
 
 .square {
